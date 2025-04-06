@@ -1,0 +1,230 @@
+.swiper2-mob
+  &__inner
+
+  &__card
+    overflow: hidden
+    background: $color-card-mobile
+    border-bottom: 2px solid $color-blue-light
+    
+
+  &__button
+    width: 97px
+    height: 97px
+    border-radius: 50%
+    background: $color-blue-dark-mob
+    position: absolute
+    transform: translateY(-50%)
+    z-index: 20
+  &__ico
+    width: 10px
+    height: 10px
+    position: absolute
+    z-index: 25
+    top: 50%
+    transform: translateY(-50%)
+  &__ico1
+    left: 18px
+  &__ico2
+    right: 18px
+  &__ico3
+    left: 18px
+  &__ico4
+    right: 18px
+
+.mob-card1
+  position: relative
+  padding: 24px 54px 0 30px
+  &__cover
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background: #3E446D
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 15px
+    padding-right: 36px
+    border: none
+    z-index: 30
+    transform: translateX(500px)
+    transition: transform 1s ease-out
+    & img
+      width: 10px
+      height: 10px
+      margin-right: 56px
+    & p
+      font-family: $font-family
+      font-weight: 300
+      font-size: 15px
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: right
+      color: #fff
+.mob-card2
+  position: relative
+  padding: 24px 30px 0 54px
+  &__cover
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background: #3E446D
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-right: 15px
+    padding-left: 36px
+    border: none
+    z-index: 30
+    transform: translateX(-500px)
+    transition: transform 1s ease-out
+    & img
+      width: 10px
+      height: 10px
+      margin-left: 56px
+    & p
+      font-family: $font-family
+      font-weight: 300
+      font-size: 15px
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: left
+      color: #fff
+.mob-card3
+  position: relative
+  padding: 24px 54px 0 30px
+  &__cover
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background: #3E446D
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 15px
+    padding-right: 36px
+    border: none
+    z-index: 30
+    transform: translateX(500px)
+    transition: transform 1s ease-out
+    & img
+      width: 10px
+      height: 10px
+      margin-right: 56px
+    & p
+      font-family: $font-family
+      font-weight: 300
+      font-size: 15px
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: right
+      color: #fff
+.mob-card4
+  position: relative
+  padding: 24px 30px 0 54px
+  
+  &__cover
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background: #3E446D
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-right: 15px
+    padding-left: 36px
+    border: none
+    z-index: 30
+    transform: translateX(-500px)
+    transition: transform 1s ease-out
+    & img
+      width: 10px
+      height: 10px
+      margin-left: 56px
+    & p
+      font-family: $font-family
+      font-weight: 300
+      font-size: 15px
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: left
+      color: #fff
+.mob-card1__cover.active
+  transform: translateX(0px)
+.mob-card2__cover.active
+  transform: translateX(0px)
+.mob-card3__cover.active
+  transform: translateX(0px)
+.mob-card4__cover.active
+  transform: translateX(0px)
+
+
+
+.mob__container
+    display: flex
+    align-items: flex-end
+    justify-content: center   
+
+.mob-card
+  &__text
+
+    padding-bottom: 65px
+    font-family: $font-family
+    font-weight: 300
+    font-size: 19px
+    line-height: 1.20
+    letter-spacing: -0.04em
+    color: #fff
+
+  &__img
+
+
+.mob-img1
+  width: 120px
+  height: auto
+  align-self: flex-end
+.mob-img2
+  width: 85px
+  height: auto
+  align-self: flex-end
+.mob-img3
+  width: 149px
+  height: auto
+  align-self: flex-end
+.mob-img4
+  width: 91px
+  height: auto
+  align-self: flex-end
+
+.mob-button1  
+  left: 90%
+  top: 50%
+  transition: left 1s ease-out
+.mob-button2  
+  right: 90%
+  top: 50%
+  transition: right 1s ease-out
+.mob-button3  
+  left: 90%
+  top: 50%
+  transition: left 1s ease-out
+.mob-button4 
+  right: 90%
+  top: 50%
+  transition: right 1s ease-out
+
+.mob-button1.active
+  left: -5%
+.mob-button2.active
+  right: -5%
+.mob-button3.active
+  left: -5%
+.mob-button4.active
+  right: -5%

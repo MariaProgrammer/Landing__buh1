@@ -1,0 +1,906 @@
+@media ( max-width: 2500px )
+  .container
+    max-width: 1660px
+    width: 100%
+    padding: 0 30px
+  .header
+    width: 100%
+    height: 130rem
+    background: url('../img/header__pic.svg'), url('../img/header__bg.svg')
+    background-position: 115% 60%, center
+    background-size: 60% auto, cover
+    background-repeat: no-repeat
+    padding-top: 3.8rem
+  .main
+    .circle-1
+      top: 36%
+    .circle-3
+      left: 50%
+  .about__features-wrap2
+    padding-top: 42rem
+  .about__features-img2
+    width: 40%
+  .footer__inner
+    min-height: 300px
+@media ( max-width: 1600px )
+  .header
+
+    width: 100%
+    height: 99.3rem
+    background: url('../img/header__pic.svg'), url('../img/header__bg.png')
+    background-position: 115% 60%, center
+    background-size: 60% auto, cover
+    background-repeat: no-repeat
+    padding-top: 3.8rem
+  .container
+
+    max-width: 1248px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+  .main 
+    .circle-1
+      top: 26%
+  .about__features-wrap2
+    padding-top: 20rem
+  .about__features-img2
+    width: 40%
+  .swiper3
+    padding-right: 140px
+    padding-left: 140px
+    // & .swiper-slide__link 
+    //   & img
+    //     display: block
+    //     width: auto
+    //     max-width: 100%
+    //     height: 100%
+    //     object-fit: contain
+    //     text-align: center
+        // padding-top: 55px
+        // padding-bottom: 55px
+        // padding-right: 140px
+
+  .footer__inner
+    min-height: 223px
+
+@media ( max-width: 1300px )
+  .container
+    padding: 0 30px
+@media ( max-width: 1199px )
+  html
+    font-size: 50%
+  .header
+    background: url('../img/header__pic.svg'), url('../img/header__bg.svg')
+    background-position: 125% 60%, 0 0
+    background-size: 60% auto, cover
+    background-repeat: no-repeat
+  .contacts__box
+    
+    gap: 10rem
+
+@media ( max-width: 991px )
+  .nav
+    &__logo
+      width: 28%
+    &__list
+      &-item:not(:last-child)
+        margin-right: 4rem
+  .header
+    background: url(../img/header__pic.svg),url(../img/header__bg.svg)
+    background-position: 125% 60%, -80px 0
+    background-size: 60% auto, cover
+    background-repeat: no-repeat
+    &__nav-list
+      padding: 15px 25px
+    &__left-btn
+      width: 42.8rem
+  .main 
+    .circle-1
+      left: 12% 
+      top: 16%
+  .about
+    &__features-wrap2
+      padding-top: 5rem
+    &__features-img2
+      width: 60%
+  .feature-card__descr
+    font-size: 2.8rem
+  .services
+    &__features
+      background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
+      background-position: 25% 28%, 71% 28%, 0 100%, 100% 100%
+      background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto
+      background-repeat: no-repeat
+  .contacts__box
+    gap: 6rem
+  .footer__logo
+    width: 8rem
+  .swiper3
+    padding-right: 100px
+    padding-left: 100px
+    // & .swiper-slide__link
+
+    //   width: fit-content
+    //   height: 100%
+    //   text-align: center
+
+      // & img
+      //   display: block
+      //   width: auto
+      //   max-width: 100%
+      //   height: 100%
+      //   object-fit: contain
+      //   text-align: center
+      //   padding-top: 55px
+      //   padding-bottom: 55px
+
+    & .swiper-button-prev3, .swiper-button-next3
+      position: relative
+      & img
+        width: 21px
+        height: 21px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+@media ( max-width: 780px )
+  html
+    font-size: 45%
+  body
+    background: $color-blue-light
+  .header
+    padding-top: 210px
+  .nav__logo
+    width: 35%
+  .nav--mob
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    width: 100%
+    height: 29rem
+    z-index: 100
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    background: url('../img/header__bg-mob.png') center / cover no-repeat
+
+    &-container
+      @include flex-center
+      justify-content: space-between
+      padding-top: 30px
+
+  .nav--desctop
+    display: none
+
+  .header
+    width: 100%
+    height: 100%
+    background: none
+    padding-top: 0
+    &__cont
+      position: relative
+    &__nav
+      margin-bottom: 8.5rem
+    &__pic-mobile
+      padding-top: 24rem
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: contain
+      margin-bottom: 2rem
+    &__partners
+      display: none
+    &__left
+      max-width: 100%
+      width: 100%
+      text-align: center
+      &-descr
+        display: none
+        &--mob
+          display: block
+          font-family: &font-family
+          font-weight: 400
+          font-size: 24px
+          line-height: 1.27
+          letter-spacing: -0.04em
+          text-align: center
+          color: #444a75
+      &-wrap
+        margin-bottom: 20px
+      &-btn
+        display: none
+        &-mobile
+          display: block
+          width: 200px
+          height: 40px
+          margin: 0 auto
+          margin-bottom: 58px
+      &-title
+        color: $color-blue-dark
+        margin-bottom: 20px
+      &-contacts
+        display: none
+      &-linie
+        text-align: center
+        margin-bottom: 25px
+        span
+          display: inline-block
+          width: 238px
+          height: 2px
+          background: #444A75
+  .header__left-descr
+    color: $color-blue-dark
+
+  .nav
+    &__list
+      display: none
+      &-item:not(:last-child)
+        margin-right: 0
+
+  .burger
+    &__menu
+      display: block
+      position: absolute
+      width: 100%
+      height: fit-content
+      left: 0
+      top: 150px
+      z-index: 60
+      border-radius: 32px
+      background: $color-blue-light
+      transform: translateY(-1000px)
+      transition: transform 1s ease-out
+      &-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 22px
+        padding: 170px 80px 51px
+
+      &-link
+        text-decoration: none
+        font-family: $font-family
+        font-weight: 400
+        font-size: 25px
+        letter-spacing: -0.04em
+        text-align: center
+        color: #3e446d
+    &__menu.active
+      transform: translateY(0px)
+    &__button
+      display: block
+  .main
+    &__title
+      justify-content: center
+    &__h3--mob
+      color: $color-blue-light
+      text-align: center
+  .about
+    // &__title
+    //   background: $color-blue-dark-mob
+    &__wrap-h3--mob
+      background: $color-blue-dark-mob
+
+  .inner__mob
+    background: $color-blue-dark-mob
+    border-radius: 35px 35px 0 0
+
+  .swiper1
+    background: $color-blue-dark-mob !important
+    & .swiper__container
+      top: 93%
+    & .swiper__buttons
+      justify-content: center
+      & .swiper-button-prev1, .swiper-button-next1
+        width: 6.4rem
+        height: 6.4rem
+        border-radius: 50%
+        border: none
+        background: none
+        position: relative
+    & .swiper-pagination
+      display: none
+    &__img
+      margin-bottom: 0
+
+    & .swiper-slide
+      &__box
+        flex-direction: column
+        align-items: flex-start
+        width: 90%
+        max-width: 100%
+      &__left
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        max-width: 100%
+        width: 100%
+        padding-right: 0
+        margin-bottom: 40px
+      &__right
+        flex-direction: column-reverse
+        // margin-bottom: 20px
+      &__linie
+        display: none
+      &__inner
+        position: relative
+      &__container
+        width: 100%
+        height: 100%
+        background: none
+
+        &--inner1
+          background: rgba(241, 241 , 255 , .3)
+          width: 100%
+          height: 90px
+          position: absolute
+          top: -20%
+          left: 0
+          right: 0
+
+    &__wrap
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+  .slide__title-h4
+    display: none
+  .slide__title-h4--mob
+    display: block
+    max-width: 65%
+    font-family: $font-family
+    font-weight: 600
+    font-size: 19px
+    line-height: 1.08
+    letter-spacing: -0.04em
+    text-align: right
+    color: #fff
+  .text-circle
+    position: relative
+    padding-left: 30px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 9px
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background: #fff
+  & .swiper-button-prev1.swiper-button-disabled, .swiper-button-next1.swiper-button-disabled
+    opacity: .5 !important
+
+  .about__features
+    background: $color-blue-light
+    padding-top: 0
+
+  .about__features-top
+    // padding: 250px 0
+    // background: url('../img/about__features-bg.svg') center / cover no-repeat
+
+    padding: 50px 0 459px
+    background: url(../img/about__features-bg.svg) center bottom / cover no-repeat
+
+  .about__features-wrap
+    max-width: 70%
+    position: relative
+    // top: -227px
+  .about__features-bottom
+    padding-bottom: 6rem
+  .about__features-circle
+    display: none
+  .swiper1
+    height: 65rem !important
+
+  .swiper__slide-text:first-of-type
+    margin-bottom: 0
+  .mb15
+    margin-bottom: 15px !important
+  .main__h3--dark-mob
+    color: $color-blue-light
+  .about__features-text
+    color: $color-blue-light
+  .services
+
+    &__features
+      flex-direction: column
+      align-items: stretch
+      background: url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__linie.svg'), url("../img/services__pic1.svg")
+      background-position: 70% 21%, 70% 42%, 70% 63%, 50% 100%
+      background-size: 18.3rem .4rem,18.3rem .4rem, 18.3rem .4rem, 10.3rem auto
+      background-repeat: no-repeat
+      &-card
+        margin-bottom: 24px
+  .feature-card
+    flex-direction: row-reverse
+    align-items: center
+    justify-content: space-between
+  .feature-card__img
+    margin-bottom: 0
+  .feature-card__descr
+    text-align: left
+  .main .card-1
+    max-width: 50%
+  .main .card-2
+    max-width: 50%
+  .main .card-3
+    max-width: 50%
+
+  .price
+
+    &__wrap
+      padding-bottom: 20rem
+      max-width: 65%
+    &__block
+      background: #6A71A1
+      position: relative
+
+    &__text
+      color: $color-blue-light
+    &__contacts
+      color: $color-blue-light
+    &__img
+      right: 5%
+      width: 40rem
+      opacity: .5
+
+    &__left-btn--mobile
+      display: block
+    &__img-box
+      display: block
+      width: 100%
+      height: 100px
+      position: absolute
+      left: 0
+      right: 0
+      bottom: -20px
+    &__img-mob
+      display: block
+      width: 100%
+      height: 100%
+      object-fit:
+
+  .none
+    display: none
+  .review
+    & .inner
+      background: #414772
+    &__img-bottom-mob
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      position: relative
+      
+    &__box-bottom
+      width: 100%
+      height: 100%
+
+  .swiper3__container
+    background: #414772
+
+  .swiper3
+    padding-left: 0px
+    padding-right: 0px
+    height: 70vh
+    padding-bottom: 70px
+    z-index: 40
+
+    & .swiper__container
+      top: 95% !important
+      z-index: 10
+
+    & .swiper__buttons
+      justify-content: center
+      position: relative
+      z-index: 15
+
+    & .swiper-button-prev3
+      width: 6.4rem
+      height: 6.4rem
+      border-radius: 50%
+      border: none
+      background: none
+      margin-right: 10px
+      z-index: 20
+
+    & .swiper-button-next3
+      width: 6.4rem
+      height: 6.4rem
+      border-radius: 50%
+      border: none
+      background: none
+      z-index: 20
+
+  .contacts
+    position: relative
+    overflow: hidden
+    &__inner
+      padding-top: 0
+      overflow: hidden
+      padding-bottom: 70px
+    &__title-h2
+      color: transparent
+      margin-bottom: 0
+    &__box
+      flex-direction: column
+      align-items: center
+
+    &__box-right
+      display: none
+    &__box-right-mob
+      display: block
+      background: $color-blue-dark
+
+    &__form
+      width: 100%
+      border: none
+      margin-right: 0
+      padding-bottom: 0
+
+  .tabs
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__inner
+      padding-top: 27px
+
+    &__title
+      margin-right: 0
+      margin-bottom: 58px
+    &__list
+      display: flex
+      width: fit-content
+      border-radius: 40px
+      background: $color-blue-light
+      border: none
+      margin-bottom: 48px
+
+    &__item
+
+    &__btn
+
+      width: 162px
+      height: 68px
+      border-radius: 40px
+      background: $color-blue-light
+      border: none
+      color: $color-blue-dark
+      font-family: $font-family
+      font-weight: 300
+      font-size: 19px
+      line-height: 1.08
+      letter-spacing: -0.04em
+      text-align: center
+    &__text
+      font-family: $font-family
+      font-weight: 300
+      font-size: 19px
+      line-height: 1.16
+      letter-spacing: -0.04em
+      text-align: center
+      color: #fff
+      margin-bottom: 6px
+
+    &__btn-active
+      background: #6A71A1
+      color: white
+
+    &__content
+      display: none
+      &-container
+        margin-bottom: 50px
+
+    &__content-active
+      display: block
+
+    &__map
+      width: 312px
+      height: 312px
+      margin-bottom: 95px
+
+  .footer
+
+    &__partners
+      display: flex
+      align-items: center
+      gap: 1.5rem
+      &-link
+        display: inline-block
+
+    &-burger__button
+      display: block
+    
+    &__nav
+      display: none
+    &-burger__menu
+      display: block !important
+      position: absolute
+      width: 100%
+      height: fit-content
+      left: 0
+      bottom: 0
+      z-index: 30
+      border-radius: 32px
+      background: $color-blue-light
+      transform: translateY(1000px)
+      transition: transform 1s ease-out
+      &.active
+        transform: translateY(0px) !important
+    &__inner
+      background: $color-blue-light
+      min-height: 115px
+    &__box
+      padding-top: 40px
+      padding-bottom: 40px
+    &__contacts
+      display: none
+
+@media ( max-width: 576px )
+  .container
+    padding: 0 15px
+  .nav--mob-container
+    padding-top: 25px
+  
+  .header
+    img
+      display: block
+      width: 60%
+      margin: 0 auto
+      margin-bottom: 25px
+
+    
+    &__nav
+      margin-bottom: 30px
+
+    &__left-title
+      font-size: 4.4rem
+  
+  .nav--mob
+    height: 20rem
+  .burger
+    &__menu--mob
+      top: 84px
+
+
+  .header
+    top: 85px
+    position: fixed
+    z-index: 50    
+    height: 85vh
+    width: 100vw
+    background: $color-blue-light
+  .main
+    padding-top: 95vh
+    position: relative
+    z-index: 80
+  .header__nav .nav--mob
+    position: relative
+  .nav--mob-container
+    padding-top: 15px
+    position: fixed
+  .header__pic-mobile
+    padding-top: 4rem
+
+  .main
+    &__title-h2
+      font-size: 32px
+    &__h3
+      font-size: 28px
+  .inner__mob
+    padding: 28px 0 28px 0
+  .price
+    &__img-box
+      bottom: -31px
+  // .swiper1
+  //   height: 69rem !important
+  // .swiper1 .swiper-slide__container--inner1
+  //   top: -85px
+  .swiper__slide-text:first-of-type
+    margin-bottom: 30px
+  .swiper1
+    & .swiper-slide__right
+      margin-bottom: 0
+    & .swiper-slide
+      &__container--inner1
+        top: -29%
+  .about__features-wrap
+    max-width: 80%
+  .about__features-top
+
+    padding: 50px 0 459px
+    background: url(../img/about__features-bg.svg) 100% bottom / cover no-repeat
+
+  .about__features-text2
+    font-size: 15px
+    max-width: 55%
+  
+
+  // .about__features-circle p
+  //   font-size: 2.5rem
+
+  // .circle-1
+  //   width: 20rem
+  //   height: 20rem
+  // .circle-2
+  //   width: 20rem
+  //   height: 20rem
+  // .circle-3
+  //   width: 24rem
+  //   height: 24rem
+  .about__features-bottom
+    padding-bottom: 15px
+  .about__features-img2
+    width: 100%
+    padding-bottom: 15px
+  
+  .feature-card__img
+    width: 55px
+  .services__features
+    background: url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__linie.svg'), url('../img/services__pic1.svg')
+    background-position: 73% 21%, 73% 42%, 73% 63%, 50% 100%
+    background-size: 4rem .2rem, 4rem .2rem, 4rem .2rem, 10.3rem auto
+    background-repeat: no-repeat
+  .feature-card__descr
+    font-size: 15px
+  .swiper-slide__link
+    img
+      min-width: 135px
+      height: auto
+  .swiper2
+    display: none
+  .swiper2-mob
+    display: block
+  .swiper3
+    padding-left: 0px 
+    padding-right: 0px 
+  .main .card-1
+    max-width: 187px
+  .main .card-2
+    max-width: 187px
+  .main .card-3
+    max-width: 187px
+  .burger__menu-list
+    padding: 120px 30px 51px
+  .header__left-linie
+    display: none
+  .footer
+    position: relative
+    z-index: 80
+    bottom: 0
+
+@media ( max-width: 360px )
+  .container
+    max-width: 320px
+    padding: 0 15px
+  .header
+    top: 85px
+    position: fixed
+    z-index: 50    
+    height: 85vh
+    width: 100vw
+    background: $color-blue-light
+  .main
+    padding-top: 90vh
+    position: relative
+    z-index: 55
+  
+  .nav--mob-container
+    padding-top: 15px
+    position: fixed
+  
+    &__left-title
+      font-size: 28px
+  // .nav--mob
+  //   width: 100%
+  //   height: 129px
+
+  //   display: block
+  //   background: url('../img/header__bg360.svg'), $color-blue-light
+  //   background-position: center
+  //   background-size: contain 
+  //   background-repeat: no-repeat
+  .header__pic-mobile
+    padding-top: 0
+    margin-bottom: 10px
+  .header__left-linie
+    display: none
+  .nav--mob
+    height: 16rem
+  .burger__menu-list
+    padding: 0px 30px 51px
+  
+  .review
+    &__title
+      font-size: 28px
+      margin-right: 0
+      gap: 21px
+      &-h2
+        margin-right: 0
+        color: white
+    &__box-bottom
+      width: 100%
+      height: 100%
+      background: $color-blue-light
+    & .main__linie
+      margin-right: 0
+    & .main__descr
+      max-width: 112px
+  .swiper1
+    height: 69rem !important
+    & .swiper-slide
+      &__container--inner1
+        top: -20%
+      &__container--inner3
+        top: -39%
+  .slide__title-h4
+    font-size: 22px
+  .text-descr
+    font-size: 15px
+
+  .main .circle-1
+    width: 18rem
+    height: 18rem
+    left: 4%
+    top: 24%
+  .main .circle-2
+    width: 18rem
+    height: 18rem
+    left: 7%
+  .main .circle-3
+    width: 20rem
+    height: 20rem
+    left: 50%
+  .about__title
+    .services__title-h2
+      margin-right: 32px
+    .main__linie
+      height: 62px
+      margin-right: 32px
+
+  .about__features-wrap
+    max-width: 90%
+  .about__features-text:first-of-type
+    margin-bottom: 12px
+  .about__features-top
+    padding: 50px 0 200px
+    background: url('../img/about__features-bg.svg')
+    background-size: cover
+    background-position: 90% bottom
+    background-repeat: no-repeat
+
+  .main__descr
+    font-size: 19px
+  .main__linie
+    height: 62px
+
+  .price__title
+    font-size: 28px
+    text-align: center
+  .price__wrap
+    padding-bottom: 20rem
+    max-width: 95%
+    position: relative
+    z-index: 20
+  .contacts__form
+    padding-right: 0
+    padding-left: 0
+  .contacts__form-title
+    font-size: 28px
+    margin-bottom: 10px
+  .contacts__form-text
+    font-size: 19px
+    margin-bottom: 38px
+  .tabs__btn
+    width: 150px
+  // .swiper3
+  //   padding-right: 18px
+  //   padding-left: 18px
+  // .swiper3 .swiper-slide__link img
+  //   left: 5%
+  

@@ -1,0 +1,18 @@
+.nav
+  &__list
+    @include flex-center
+    &--mob
+      display: none
+    &-item:not(:last-child)
+      margin-right: 5rem
+    &-link
+      font-family: $second-family
+      font-weight: 500
+      font-size: 2rem
+      letter-spacing: -0.04em
+      color: $color-blue-dark
+      text-decoration: none
+      cursor: pointer
+  &--white
+    color: white
+      

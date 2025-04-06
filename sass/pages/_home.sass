@@ -1,0 +1,481 @@
+.header
+
+  width: 100%
+  height: 99.3rem
+  background: url('../img/header__pic.svg'), url('../img/header__bg.png')
+  background-position: 115% 60%, center
+  background-size: 60% auto, cover
+  background-repeat: no-repeat
+  padding-top: 3.8rem
+
+  &__nav
+    @include flex-center
+    height: 100%
+    justify-content: space-between
+    margin-bottom: 11.8rem
+
+    &-list
+      padding: 15px 39px
+      border-radius: 19px
+      background: #fff
+  &__pic-mobile
+    display: none
+  &__left
+    max-width: 55%
+    margin-bottom: 4rem
+    &-wrap
+      margin-bottom: 4.3rem
+    &-title
+      margin: 0
+      padding: 0
+      margin-bottom: 4.3rem
+    &-descr
+      margin-bottom: .3rem
+      &:last-of-type
+        margin-bottom: 0
+      &--mob
+        display: none
+    &-btn
+      width: 48.8rem
+      height: 5.3rem
+      margin-bottom: 4.3rem
+      &-mobile
+        width: 48.8rem
+        height: 6rem
+        display: none
+
+  &__partners
+    display: flex
+    align-items: center
+    gap: 1.8rem
+    &-link
+      display: inline-block
+    span
+      display: inline-block
+      font-family: $font-family
+      font-weight: 700
+      font-size: 2.8rem
+      line-height: 1.20
+      letter-spacing: -0.05em
+      color: #fff
+      margin-right: 1.8rem
+
+.nav__logo
+  width: 23%
+.burger
+  &__menu
+    display: none
+  &__button
+    display: none
+.about
+  &__features
+    padding-top: 20.4rem
+    //padding-bottom: 18.5rem
+    min-height: 140rem
+    background: url("../img/about__pic1-lg1.svg"), url('../img/wave3.svg')
+    background-position: 0 0, 0 60rem
+    background-size: contain, contain
+    background-repeat: no-repeat
+    &-img2
+      width: 40%
+      height: auto
+  // &__features-top
+  &__features-bottom
+    padding-bottom: 18.5rem
+    position: relative
+  &__features-circle
+    @include flex-center
+    justify-content: center
+    border-radius: 50%
+    background: $color-blue-dark
+    & p
+      font-family: $font-family
+      font-weight: 200
+      font-size: 3rem
+      line-height: 1.2
+      letter-spacing: -0.04em
+      text-align: center
+      color: #f1f1ff
+
+  &__features-wrap
+    max-width: 52.4rem
+
+  &__features-wrap2
+    padding-top: 20rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__features-text:first-of-type
+
+    margin-bottom: 24px
+  &__features-text2
+    max-width: 50.9rem
+.nav--mob
+  display: none
+.services
+  background: $color-blue-light
+  &__features
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    padding-bottom: 18rem
+    padding-top: 9.3rem
+    background: url('../img/services__linie.svg'),url('../img/services__linie.svg'), url("../img/services__pic1.svg"), url('../img/services__pic2.svg')
+    background-position: 25% 24%, 71% 24%, 0 100%, 100% 100%
+    background-size: 18.3rem .4rem,18.3rem .4rem, 10.3rem auto, 38.1rem auto
+    background-repeat: no-repeat
+
+.feature-card
+  @include flex-center
+  flex-direction: column
+
+  &__img
+    width: 16rem
+    height: 12rem
+    margin-bottom: 3rem
+
+  &__descr
+    font-family: $font-family
+    font-weight: 500
+    font-size: 3.2rem
+    line-height: 1.20
+    text-align: center
+    color: #515886
+
+.card-1
+  max-width: 23.8rem
+.card-2
+  max-width: 35.6rem
+.card-3
+  max-width: 30.5rem
+.swiper2-mob
+  display: none
+.price
+  &__block
+    position: relative
+
+  &__inner
+    background: $color-blue-dark
+    padding-top: 3rem
+    padding-bottom: 3rem
+
+  &__img
+    position: absolute
+    right: 15%
+    bottom: 0
+    width: 30rem
+
+  &__title
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4.8rem
+    letter-spacing: -0.01em
+    color: $color-blue-light
+    & span
+      font-family: $font4
+      font-size: 5.2rem
+
+  &__wrap
+    max-width: 61.2rem
+    padding-top: 8.4rem
+    padding-bottom: 8.4rem
+    position: relative
+    z-index: 10
+
+  &__text
+    font-family: $font-family
+    font-weight: 400
+    font-size: 2.8rem
+    line-height: 1.2
+    letter-spacing: -0.04em
+    color: #6a71a1
+    margin-bottom: 3.8rem
+
+  &__contacts
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: #6a71a1
+    margin-bottom: .7rem
+    &:last-of-type
+      margin-bottom: 3.8rem
+  &__left-btn
+    padding: 1.2rem 5.1rem
+  &__left-btn--mobile
+    padding: 1.2rem 5.1rem
+    display: none
+  &__img-box
+    display: none
+.review
+  &__img-bottom-mob
+    display: none
+
+.contacts
+  background: $color-blue-light
+
+  &__inner
+    padding: 11rem 0
+  &__title-h2
+    display: block
+    margin-right: 0
+    margin-bottom: 6.7rem
+
+.contacts
+  &__inner
+
+  &__title-h2
+
+  &__box
+    display: flex
+    justify-content: center
+    gap: 213px
+    &-right-mob
+      display: none
+  &__form
+    max-width: 56.2rem
+    padding: 3.9rem 4.5rem 4.9rem 4.5rem
+    margin-right: 3rem
+    @include form-border
+    &-title
+      font-family: $font-family
+      font-weight: 400
+      font-size: 4.8rem
+      letter-spacing: -0.01em
+      text-align: center
+      color: #444a75
+      margin-bottom: 1.9rem
+    &-text
+      font-family: $font-family
+      font-weight: 400
+      font-size: 3.2rem
+      line-height: 1.17
+      letter-spacing: -0.04em
+      text-align: center
+      color: #444a75
+      margin-bottom: 4.5rem
+
+  &__input
+    width: 100%
+    padding: 1.8rem 2rem
+    @include form-border
+    background: transparent
+
+  &__box-right
+    max-width: 43.6rem
+
+  &__box-right-top
+    margin-bottom: 7.3rem
+
+  &__subtitle
+    font-family: $font-family
+    font-weight: 400
+    font-size: 4.8rem
+    line-height: 1.08
+    letter-spacing: -0.04em
+    color: #f1f1ff
+    background-color: $color-blue-dark
+    padding: 1.3rem 3.8rem
+    border-radius: 1.8rem
+    margin-bottom: 2.7rem
+
+  &__text
+    font-family: $font-family
+    font-weight: 300
+    font-size: 3.2rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: $color-blue-dark
+
+.main
+  &__title-h2
+
+.input
+  &__text
+    display: block
+    width: 100%
+    margin-bottom: 2.5rem
+
+.contacts__input
+  position: relative
+.validity-icon
+  position: relative
+  left: 0
+  top: 0
+  z-index: 10
+
+.validity-icon::before
+  position: absolute
+  right: 30px
+  top: 2px
+.validity-icon::after
+  position: absolute
+  right: 30px
+  top: -6px
+[type="text"]:invalid:required.touched + .validity-icon::before
+  content: '✖'
+  color: #fa5454
+[type="text"]:invalid:required.touched
+  border: 4px solid #fa5454 !important
+.just-validate-error-lable
+  border: 4px solid #fa5454 !important
+.just-validate-error-field
+  border: 4px solid #fa5454 !important
+
+[type="text"]:valid + .validity-icon::after
+  // content: '✓'
+  content: ''
+  width: 28px
+  height: 28px
+  background: url('../icons/galka.svg')
+
+// [type="tel"]:invalid 
+//   border: 2px solid #fa5454
+
+input:focus
+  outline: none
+  border: 2px solid $color-blue-middle
+  background: transparent
+  font-family: $font-family
+  font-weight: 200
+  font-size: 2.2rem
+  line-height: 1.2
+  letter-spacing: -0.01em
+  color: #444a75
+
+textarea:focus
+  outline: none
+  border: 2px solid $color-blue-middle
+  font-family: $font-family
+  font-weight: 200
+  font-size: 2.2rem
+  line-height: 1.2
+  letter-spacing: -0.01em
+  color: #444a75
+
+::placeholder
+  font-family: $font-family
+  font-weight: 200
+  font-size: 2.2rem
+  line-height: 1.2
+  letter-spacing: -0.01em
+  color: #444a75
+
+textarea
+  width: 100%
+  resize: none
+  height: 20rem
+  max-height: auto
+  overflow: hidden
+textarea:focus::placeholder
+  color: transparent
+
+.textarea
+  margin-bottom: 2.4rem
+
+.contacts
+  &__btn
+    display: block
+    width: 100%
+    margin-bottom: 1.5rem
+
+.checkbox
+  // max-width: 28.2rem
+  display: flex
+.checkbox-label
+  padding-left: 17px
+  font-family: $font-family
+  font-weight: 300
+  font-size: 1.7rem
+  line-height: 1.5
+  letter-spacing: -0.04em
+  color: $color-blue-dark
+  &-link
+    font-family: $font-family
+    font-size: 1.7rem
+    line-height: 1.5
+    letter-spacing: -0.04em
+    color: $color-blue-dark
+    font-weight: 400
+    text-decoration: underline
+    text-decoration-skip-ink: none
+.checkbox-input
+  appearance: none
+  position: relative
+  width: 24px
+  height: 24px
+  background: #fff
+  border-radius: 50%
+  border: 1px solid $color-blue-dark
+  transition: 500ms
+  &::after
+    content: ""
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 9px
+    font-size: 30px
+    background-image: url("../icons/check.svg")
+    background-repeat: no-repeat
+    transition: 500ms
+.checkbox-input:checked
+  background: #6A71A1
+  transition: 500ms
+.checkbox-input:hover
+  cursor: pointer
+.footer
+  &__partners
+    display: none
+
+  &__inner
+    @include flex-center
+    justify-content: space-between
+    width: 100%
+    min-height: 223px
+    background: url('../img/footer__bg.svg') center / cover no-repeat
+  &__contacts
+    display: flex
+    flex-direction: column
+    gap: 5px
+    p
+      font-family: $second-family
+      font-weight: 500
+      font-size: 2rem
+      line-height: 1.27
+      letter-spacing: -0.04em
+      color: #f1f1ff
+
+  &__box
+    @include flex-center
+    justify-content: space-between
+    padding-top: 4.5rem
+  &__logo
+    display: block
+    width: 9.1rem
+    height: auto
+
+  &__logo-img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &__nav
+    display: block
+
+  &-burger__button
+    display: none
+
+  &__text
+    font-family: $second-family
+    font-weight: 500
+    font-size: 2rem
+    line-height: 1.27
+    letter-spacing: -0.04em
+    color: #f1f1ff
+    margin-bottom: 5px
+.footer-burger__menu
+  display: none !important

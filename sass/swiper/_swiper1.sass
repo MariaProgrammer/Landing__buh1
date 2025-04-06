@@ -1,0 +1,134 @@
+.swiper1
+  height: 50rem !important
+  width: calc(100vw-30px) !important
+  background: #6A71A1 !important
+  position: relative
+  overflow: hidden
+  & .swiper__wrapper
+    width: 100%
+  & .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after 
+    content: ''
+  & .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after 
+    content: ''
+  & .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+    position: absolute
+    left: 0
+    bottom: 3.8rem
+
+  & .swiper-pagination-bullet
+    width: 1.31rem !important
+    height: 1.31rem !important
+    background: #fff !important
+    opacity: 1 !important 
+    transition: all 1s ease
+  
+  & .swiper-pagination-bullet-active
+    width: 2rem !important
+    height: 2rem !important
+    background: transparent !important
+    border: 2px solid white
+    transform: translateY(2px)
+    transition: all .6s ease
+  
+  & .swiper__container
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%  
+    z-index: 10
+    transform: translate(-50%, -50%)
+  & .swiper__buttons
+    @include flex-center
+    justify-content: space-between  
+    // max-width: 1248px
+    padding: 0 15px
+    margin: 0 auto
+    z-index: 10
+
+  & .swiper-button-prev1, .swiper-button-next1
+    width: 6.4rem 
+    height: 6.4rem
+    border-radius: 50%
+    border: 4px solid white
+    background: rgba(255, 255, 255, .2)
+    position: relative
+    & img
+      position: absolute
+      left: 50%
+      height: 50%
+      transform: translate(-50%, 50%)
+  & .swiper-button-prev1.swiper-button-disabled, .swiper-button-next1.swiper-button-disabled
+    opacity: 0 
+  & .swiper-slide
+    position: relative
+    
+    &__inner
+      width: 100%
+      height: 24.5rem
+      background: #3E446D      
+      position: absolute 
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 5
+    &__container
+      width: 100%
+      height: 48rem
+      position: absolute
+      left: 50%
+      top: 1rem
+      transform: translateX(-50%) 
+      background: url('../img/slide__bg1.svg')
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat    
+      z-index: 8
+      opacity: .3
+      
+
+    &__box
+      @include flex-center
+      justify-content: center
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      opacity: 1
+      z-index: 10      
+      
+      
+      
+    &__left
+      display: flex
+      flex-direction: column
+      padding-right: 6rem
+      
+
+    &__linie
+      width: 3px
+      height: 31.3rem
+      background: white
+      margin-right: 6rem
+
+    &__right
+      display: flex
+      flex-direction: column
+
+.swiper__slide-text
+  max-width: 64.2rem
+  margin-bottom: 2.8rem
+  font-weight: 100
+  &:last-child
+    margin-bottom: 0
+
+.swiper1__img
+  display: block
+  width: 14.2rem  
+  margin-bottom: 3.4rem
+  align-self: flex-end
+.slide__title-h4--mob
+  display: none
+// --------------------
+
+
+ 
+ 

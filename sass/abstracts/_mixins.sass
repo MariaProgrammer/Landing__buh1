@@ -1,0 +1,28 @@
+@mixin style-link
+  display: inline-block
+  text-transform: uppercase
+  text-decoration: none
+  color: #3E446D
+
+@mixin font($font, $size, $url)
+  @font-face 
+    font-family: $font;
+    src: $url
+    font-display: swap;
+    font-weight: $size;
+    font-style: normal;
+@mixin flex-center
+  display: flex
+  align-items: center
+@mixin flex-column   
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+@mixin form-border
+  border: 4px solid #6A71A1
+  border-radius: 1.8rem
+
+
+
+

@@ -1,0 +1,95 @@
+.text-descr
+  font-family: $font-family
+  font-weight: 400
+  font-size: 2.8rem
+  line-height: 1.27
+  letter-spacing: -0.04em
+  color: $color-white
+.dark-text
+  color: #484F80
+.light__text
+  color: $color-white
+.ta-left
+  text-align: left
+.ta-right
+  text-align: right
+.mr24
+  margin-right: 24px
+.margin__text24  
+  margin-bottom: 24px
+.inner
+  background: $color-blue-dark
+  padding-top: 4.7rem
+  padding-bottom: 4.7rem
+.cont-center
+  @include flex-center
+  justify-content: center
+.cover      
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%      
+  height: 26.6rem
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-left: 2.7rem
+  padding-right: 1.5rem
+  background: rgba(62, 68, 109, .8)
+  z-index: 15
+  transform: translateY(100%)
+  transition: transform .6s ease-out
+  & p
+    font-family: $font-family
+    font-weight: 400
+    font-size: 2.4rem
+    line-height: 1.2
+    letter-spacing: -0.04em
+    color: #fff
+
+.cover1.hover  
+  transform: translateY(0) 
+.cover2.hover
+  transform: translateY(0) 
+.cover3.hover
+  transform: translateY(0) 
+.cover4.hover
+  transform: translateY(0) 
+.cover5.hover
+  transform: translateY(0) 
+.circle-1 
+  width: 25.2rem
+  height: 25.2rem
+  position: absolute
+  left: 18%
+  top: 19%
+  transform: scale(0)
+  transition: transform 1s ease-out
+  transition-delay: 500
+.circle-2
+  width: 22.5rem
+  height: 22.5rem
+  position: absolute
+  left: 15%
+  top: 72%
+  transform: scale(0)
+  transition: transform .8s ease-out
+  
+.circle-3
+  width: 28rem
+  height: 28rem
+  position: absolute
+  left: 71%
+  top: 64%
+  transform: scale(0)
+  transition: transform .8s ease-out
+
+.circle-1.active
+  transform: scale(1)
+.circle-2.active
+  transform: scale(1)
+  
+.circle-3.active
+  transform: scale(1)
+

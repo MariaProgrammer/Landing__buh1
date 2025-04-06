@@ -1,0 +1,117 @@
+
+.swiper3__container
+  background: url('../img/swiper3__bg.svg'), #6A71A1
+  background-position: center
+  background-size: 90% auto
+  background-repeat: no-repeat
+  padding-top: 55px
+  padding-bottom: 55px
+
+.swiper3
+  height: auto !important
+  width: calc(100vw-30px) !important
+  position: relative
+  overflow: hidden
+  padding-left: 100px
+  padding-right: 100px
+
+  & .swiper__wrapper .slide
+    width: 100%
+    height: auto !important
+    // width: 70% !important
+    // max-width: 70% !important
+    // height: 397rem !important
+    -webkit-transition-timing-function: linear !important
+    transition-timing-function: linear !important
+    overflow: hidden
+    
+  
+  & .swiper-slide__link
+    width: 100%
+    height: auto 
+  
+  .swiper-slide
+    & img
+      display: block
+      width: 100%
+      
+      height: auto
+      text-align: center
+  
+  & .swiper-button-prev3, .swiper-button-next3
+    width: 6.4rem 
+    height: 6.4rem
+    border-radius: 50%
+    border: 4px solid white
+    background: rgba(255, 255, 255, .2)
+    position: relative
+    & img
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+  & .swiper-button-prev3.swiper-button-disabled, .swiper-button-next3.swiper-button-disabled
+    opacity: 0 
+
+  & .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+    content: ''
+  & .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after
+    content: ''
+  & .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+    position: absolute
+    left: 0
+    bottom: 3.8rem
+
+  & .swiper__container
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    transform: translate(-50%, -50%)
+    z-index: 10
+  & .swiper__buttons    
+    @include flex-center
+    justify-content: space-between    
+    padding: 0 15px
+    margin: 0 auto
+    
+
+  & .swiper-button-prev3, .swiper-button-next3
+    width: 6.4rem
+    height: 6.4rem
+   
+  & .swiper-button-prev3.swiper-button-disabled, .swiper-button-next3.swiper-button-disabled
+    opacity: 0 !important
+
+  .slide__cover 
+    position: relative
+  .img__cover
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 105px
+    background: rgba(0, 0, 0,.4)
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateY(100%)
+    opacity: 0
+    transition: transform .5s ease-out, opacity .5s ease-out 
+    &--inner
+      display: flex
+      img
+        display: inline-block
+        width: 4.5rem
+        height: 4.5rem
+        margin-right: 5px 
+      span
+        font-family: $font-family
+        font-weight: 300
+        font-size: 3.2rem
+        line-height: 1.08
+        letter-spacing: -0.01em
+        color: #f1f1ff
+  .img__cover.active
+    transform: translateY(0)
+    opacity: 1    
