@@ -278,7 +278,7 @@ document.addEventListener('scroll', function () {
 const swiper3 = new Swiper('.swiper3', {
 	direction: 'horizontal',
 	loop: false,
-	slidesPerView: 140,
+	slidesPerView: 7,
   slidesPerGroup: 1,
 	spaceBetween: 'auto',
   // freemode: true,
@@ -287,7 +287,7 @@ const swiper3 = new Swiper('.swiper3', {
   cssMode: true,
   allowTouchMove: true,
   grabCursor: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   centerInsufficientSlides: true,
 
   // slidesOffsetBefore: 170,
@@ -307,7 +307,11 @@ const swiper3 = new Swiper('.swiper3', {
     // when window width is >= 300px
 		300: {
       slidesPerView: 1,
-      spaceBetween: 12
+      spaceBetween: 12,
+      createElements: false,
+      cssMode: false,
+      allowTouchMove: true,
+      grabCursor: true,
       
     },
     340: {
@@ -339,7 +343,9 @@ const swiper3 = new Swiper('.swiper3', {
       slidesPerView: 3,
       spaceBetween: 60,
       centeredSlides: true,
-  centerInsufficientSlides: true
+  centerInsufficientSlides: true,
+ 
+  
     },
     // when window width is >= 640px
     958: {
@@ -347,10 +353,9 @@ const swiper3 = new Swiper('.swiper3', {
       spaceBetween: 100
     },
 		1600: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 140,
-      centeredSlides: true,
-  centerInsufficientSlides: true
+      
     }
   },
   on: {
